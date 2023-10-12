@@ -1,5 +1,13 @@
-import fs from "fs";
+import readline from "readline";
 
-fs;
+export interface Operation {
+  operation: "buy" | "sell";
+  "unit-cost": number;
+  quantity: number;
+}
 
-console.log("hey");
+export interface TaxResult {
+  tax: number;
+}
+
+export function calculateTaxes(operations: Operation[]): TaxResult[] {}
