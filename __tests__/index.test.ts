@@ -1,4 +1,4 @@
-import { Operation, TaxResult, calculateTaxes } from "../src/index";
+import { Operation, TaxResult, calculateTaxes } from "../src/calculateTax.js";
 
 interface TestCase {
   case: string;
